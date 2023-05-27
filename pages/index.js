@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import About from "../components/homepage/About/About";
-import Footer from "../components/homepage/Footer/Footer";
+import Contact from "../components/homepage/Contact/Contact";
 import Guest from "../components/homepage/Guest/Guest";
 import Header from "../components/homepage/Header/Header";
 
 import { useDispatch, useSelector } from "react-redux";
 import { getAllMusic } from "../actions/musicActions";
+import Footer from "../components/homepage/Footer/Footer";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -94,6 +95,7 @@ const HomePage = () => {
       <Header />
       <About />
       <Guest />
+      <Contact />
       <Footer />
     </div>
   );
